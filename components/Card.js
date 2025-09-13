@@ -3,8 +3,8 @@ const Card = ({ title, value }) => {
     <div
       className="
         backdrop-blur-xl bg-black/30
-        w-[90%] sm:w-[300px] md:w-[340px] lg:w-[360px]
-        min-h-[140px]
+        w-96 max-sm:w-75
+        h-[140px] max-sm:h-[120px]
         rounded-3xl flex flex-col items-center justify-center
         border border-white/10
         shadow-lg hover:shadow-2xl
