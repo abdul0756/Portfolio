@@ -90,44 +90,43 @@ export default function Home() {
           My Skills
         </div>
 
-<motion.div
-  className="flex flex-wrap justify-center items-center gap-10 mt-20 w-4xl max-sm:w-full max-sm:mt-10 max-sm:flex-col"
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true }}
-  variants={{
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15 },
-    },
-  }}
->
-
-  {[
-    ["HTML", 95],
-    ["CSS", 80],
-    ["JavaScript", 70],
-    ["React", 70],
-    ["Tailwind CSS", 85],
-    ["Node.js", 70],
-    ["Express.js", 75],
-    ["Next.js", 75],
-    ["MongoDB", 80],
-  ].map(([title, value], idx) => (
-    <motion.div
-      key={idx}
-      variants={{
-        hidden: { opacity: 0, y: 40, scale: 0.95 },
-        show: { opacity: 1, y: 0, scale: 1 },
-      }}
-      transition={{ duration: 0.9, ease: "easeOut" }}
-    >
-      <Card title={title} value={value} />
-    </motion.div>
-  ))}
-</motion.div>
-
+        <motion.div
+          className="flex flex-wrap justify-center items-center gap-10 mt-20 w-full max-sm:w-full max-sm:mt-10 max-sm:flex-col"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: { staggerChildren: 0.15 },
+            },
+          }}
+        >
+          {[
+            ["HTML", 95],
+            ["CSS", 80],
+            ["JavaScript", 70],
+            ["React", 70],
+            ["Tailwind CSS", 85],
+            ["Node.js", 70],
+            ["Express.js", 75],
+            ["Next.js", 75],
+            ["MongoDB", 80],
+          ].map(([title, value], idx) => (
+            <motion.div
+              key={idx}
+              variants={{
+                hidden: { opacity: 0, y: 40, scale: 0.95 },
+                show: { opacity: 1, y: 0, scale: 1 },
+              }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+            >
+              <Card title={title} value={value} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
 
       {/* Projects Section */}
       <motion.div
