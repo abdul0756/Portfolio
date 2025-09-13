@@ -91,8 +91,7 @@ export default function Home() {
         </div>
 
 <motion.div
-  className="flex flex-wrap justify-center items-center gap-10 mt-20 w-4xl 
-             max-sm:w-full max-sm:mt-10 max-sm:flex-col"
+  className="flex flex-wrap justify-center items-center gap-10 mt-20 w-4xl max-sm:w-full max-sm:mt-10 max-sm:flex-col"
   initial="hidden"
   whileInView="show"
   viewport={{ once: true }}
@@ -104,6 +103,7 @@ export default function Home() {
     },
   }}
 >
+
   {[
     ["HTML", 95],
     ["CSS", 80],
